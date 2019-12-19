@@ -22,12 +22,12 @@ setTimeout(() => {
       .then(result => console.log(result))
 
   }
-, 1000)
+  , 1000)
 
 console.log('end')
 
 
-/* 
+/*
 
 сценарии
 

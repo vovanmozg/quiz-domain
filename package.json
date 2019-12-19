@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "vovanmozg",
+  "license": "MIT",
   "dependencies": {
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0"
