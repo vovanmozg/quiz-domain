@@ -1,23 +1,7 @@
-const { createStore, applyMiddleware } = require('redux');
-const thunk = require('redux-thunk').default
+const { Quiz } = require('./quiz');
 
 
 
-
-class Question {
-  answer(answerObject) {
-    store.dispatch(quistionAnswered({}))
-
-    return Promise.resolve(1)
-  }
-}
-
-
-class Quiz {
-  nextQuestion() {
-    return new Question();
-  }
-}
 
 class App {
   startQuiz() {
@@ -52,13 +36,8 @@ quistionAnswered = (answerObject) => ({
 // 	}
 // }
 
-reducer = (state) => state
-
-const store = createStore(reducer, applyMiddleware(thunk));
 
 
-
-
-
+1
 
 exports.createApp = createApp;
