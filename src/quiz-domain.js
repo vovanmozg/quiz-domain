@@ -1,9 +1,13 @@
 const { Quiz } = require('./quiz');
-
+const db = require('./db');
 
 
 
 class App {
+	constructor(options) {
+	  db.setProvider(options.dbProvider);
+	}
+
   startQuiz() {
     this.quiz = new Quiz();
     return this.quiz;
@@ -11,8 +15,8 @@ class App {
 }
 
 
-function createApp(db) {
-	return new App(db)
+function createApp(options) {
+	return new App(options)
 }
 
 
